@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_1"
+    tools:context=".Activity1">
+
+    <RadioButton
+        android:id="@+id/radio_button_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="152dp"
+        android:onClick="onRadioButtonClicked"
+        android:text="@string/text_radio_button_act1_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/radio_button_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="145dp"
+        android:onClick="onRadioButtonClicked"
+        android:text="@string/text_rdio_button_act1_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radio_button_1" />
+
+    <ImageView
+        android:id="@+id/image_act1_asaro"
+        android:layout_width="194dp"
+        android:layout_height="181dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginBottom="36dp"
+        android:src="@drawable/asaro"
+        app:layout_constraintBottom_toTopOf="@+id/multiline_text_editor_act1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radio_button_2" />
+
+    <ToggleButton
+        android:id="@+id/toggle_button_act1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        android:layout_marginBottom="103dp"
+        android:text="@string/text_toggle_button_act1"
+        android:textOff="@string/text_toggle_button_act1_off"
+        android:textOn="@string/text_toggle_button_act1_on"
+        app:layout_constraintBottom_toTopOf="@+id/multiline_text_editor_act1"
+        app:layout_constraintStart_toEndOf="@+id/image_act1_asaro" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="408dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/button_toast_act1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="toast"
+            android:text="@string/text_button_toast_act1" />
+
+        <Button
+            android:id="@+id/button_back_act1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="back"
+            android:text="@string/text_button_back_act1" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/multiline_text_editor_act1"
+        android:layout_width="282dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".BMIActivity">
+
+    <TextView
+        android:id="@+id/textView_weight_bmi"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/act2_elem_height"
+        android:gravity="bottom|center"
+        android:text="@string/text_weight_act2"
+        android:textSize="@dimen/act2_elem_text_size" />
+
+    <EditText
+        android:id="@+id/edit_weight_bmi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:textSize="@dimen/act2_elem_text_size" />
+
+    <TextView
+        android:id="@+id/textView_height_bmi"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/act2_elem_height"
+        android:gravity="bottom|center"
+        android:text="@string/text_height_act2"
+        android:textSize="@dimen/act2_elem_text_size" />
+
+    <EditText
+        android:id="@+id/edit_height_bmi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:textSize="@dimen/act2_elem_text_size" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="@dimen/act2_elem_width"
+        android:layout_height="@dimen/act2_elem_height">
+
+        <Button
+            android:id="@+id/calculate_bmi_button"
+            android:layout_width="180dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="1dp"
+            android:text="@string/calculate_bmi_button"
+            android:textSize="@dimen/act2_elem_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.428"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView_bmi_result"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/act2_elem_height"
+        android:gravity="center"
+        android:textSize="@dimen/act2_elem_text_size" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/act2_elem_width">
+
+        <Button
+            android:id="@+id/bmi_button_back"
+            android:layout_width="182dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="112dp"
+            android:layout_marginTop="116dp"
+            android:layout_marginEnd="112dp"
+            android:text="@string/text_button_back_act1"
+            android:textSize="@dimen/act2_elem_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

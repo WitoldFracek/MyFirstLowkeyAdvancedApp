@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="left"
+        android:id="@+id/left_nav"
+        android:icon="@drawable/left_arrow"/>
+    <item
+        android:title="centre"
+        android:id="@+id/centre_nav"
+        android:icon="@drawable/centre"/>
+    <item
+        android:title="right"
+        android:id="@+id/right_nav"
+        android:icon="@drawable/right_arrow"/>
+
+</menu>

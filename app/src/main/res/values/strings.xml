@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">MyFirstLowkeyAdvancedApp</string>
+    <string name="text_main_screen_description">To jest krótki opis aplikacji. Jest to pierwsza aplikacja jaką zrobiłem na androida i która jak widać działa. Cieszę się że jesteście tu ze mną aby tego doświadczyć!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_button_1">1</string>
+    <string name="text_button_2">2</string>
+    <string name="text_button_3">3</string>
+    <string name="text_author_name">Witold Frącek</string>
+    <string name="text_radio_button_act1_1">Enable text</string>
+    <string name="text_rdio_button_act1_2">Disable text</string>
+    <string name="text_toggle_button_act1">Show</string>
+    <string name="text_toggle_button_act1_off">Show</string>
+    <string name="text_toggle_button_act1_on">Hide</string>
+    <string name="text_button_toast_act1">Toast</string>
+    <string name="text_button_back_act1">Back</string>
+    <string name="text_first_act2">tekst</string>
+    <string name="text_mail_act2">e-mail</string>
+    <string name="text_number_act2">liczba</string>
+    <string name="text_phone_act2">telefon</string>
+    <string name="text_weight_act2">waga</string>
+    <string name="text_height_act2">wzrost</string>
+    <string name="act2_text_allignment">center</string>
+    <string name="bmi_button">BMI</string>
+    <string name="calculate_bmi_button">Calculate</string>
+</resources>
